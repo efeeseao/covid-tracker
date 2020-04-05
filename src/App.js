@@ -4,6 +4,10 @@ import { Cards, Chart, Country } from './components';
 
 import './App.css';
 
+import ImageLogo from './assets/logo.jpg';
+
+import Header from './components/Header';
+
 import { fetchData } from './services/api';
 
 class App extends Component {
@@ -29,6 +33,8 @@ class App extends Component {
 
     return (
       <div className="container">
+        <Header />
+        <img src={ImageLogo} alt="Covid"/> 
         <Cards data={data} />
         <Country handleCountryChange={this.handleCountryChange} />
         <Chart data={data} country={country} />

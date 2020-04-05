@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.header .title {
+  font-size: 2rem;
+  color: #526488;
+}
+
+.header ul {
+  margin: 20px;
+  display: flex;
+}
+
+.header a {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 0.3rem 1rem;
+  margin-right: 0.5rem;
+}
